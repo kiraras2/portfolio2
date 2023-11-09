@@ -1,4 +1,4 @@
-var page = 'top';
+let page = 'top';
 
 document.ontouchstart = function () { };
 document.addEventListener('touchstart', function () { }, true);
