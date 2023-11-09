@@ -25,11 +25,7 @@ $(window).on('load', function () {
     $('#btn-nav-icon-cross').on('click', function () {
         $('.tmp-menu').addClass('none');
     });
-    // $('body, header').hide().fadeIn(1000);
-    // $('.key_visual-toppage').hide().delay(600).fadeIn(1000);
-    // $('.list-article ').hide().delay(900).fadeIn(1000);
     $('footer').hide().delay(2000).fadeIn(1000,);
-    // new WOW().init();
     if ($('.js-scroll-trigger').length) {
         scrollAnimation();
     }
@@ -68,8 +64,6 @@ function displayAlert() {
 }
 function checkIosVersion() {
     var ua = navigator.userAgent.toLowerCase();
-    // console.log(ua);
-    // alert(ua);
     var modalIosSafari = $('#modal_ios_safari');
     if (ua.indexOf('edge') != -1 || ua.indexOf('chrome') != -1) {
         modalIosSafari.modal('hide');
