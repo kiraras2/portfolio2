@@ -1,6 +1,6 @@
 (function($){
 	$.fn.shuffleLetters = function(prop){
-		let options = $.extend({
+		var options = $.extend({
 			"step"		: 5,
 			"fps"		: 24,
 			"text"		: "",

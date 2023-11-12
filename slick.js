@@ -2,14 +2,14 @@ window.performance && window.performance.mark && window.performance.mark('shopif
 
 const current_url = new URL(window.location.href);
 const current_params = current_url.searchParams;
-let stored_selectable_code = sessionStorage.getItem("code");
+var stored_selectable_code = sessionStorage.getItem("code");
 const get_value_selectable_code = current_params.get('code');
 // const selectable_code = current_params.get('selectable_code');
-let stored_refil_code = sessionStorage.getItem("refil_code");
+var stored_refil_code = sessionStorage.getItem("refil_code");
 const get_value_refil_code = current_params.get('refil_code');
-let discount_code = "";
-let refil_code = "";
-let selectable_code = "";
+var discount_code = "";
+var refil_code = "";
+var selectable_code = "";
 if(get_value_refil_code) {
   sessionStorage.setItem("refil_code", get_value_refil_code);
   refil_code = get_value_refil_code;

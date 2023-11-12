@@ -1,4 +1,4 @@
-let page = 'top';
+var page = 'top';
 
 document.ontouchstart = function () { };
 document.addEventListener('touchstart', function () { }, true);
@@ -35,7 +35,7 @@ $(window).on('load', function () {
 function scrollAnimation() {
     $(window).scroll(function () {
         $(".js-scroll-trigger").each(function () {
-            let position = $(this).offset().top,
+            var position = $(this).offset().top,
                 scroll = $(window).scrollTop(),
                 windowHeight = $(window).height();
             if (page != undefined && page == 'top') {
