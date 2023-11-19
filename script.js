@@ -51,45 +51,45 @@ function scrollAnimation() {
     });
 }
 
-function displayAlert() {
-    if (page != undefined && page == 'lp202111') {
-    } else {
-        var windowSize = window.innerWidth;
-        if (windowSize < 992 && windowSize >= 465) {
-            $('#modal_qrcode').modal('show');
-        } else {
-            $('#modal_qrcode').modal('hide');
-        }
-    }
-}
-function checkIosVersion() {
-    var ua = navigator.userAgent.toLowerCase();
-    var modalIosSafari = $('#modal_ios_safari');
-    if (ua.indexOf('edge') != -1 || ua.indexOf('chrome') != -1) {
-        modalIosSafari.modal('hide');
-    } else if (ua.indexOf('safari') != -1) {
-        if (ua.match(/(iphone|ipad) os (1[4-9]|[2-9]\d)/)) {
-            modalIosSafari.modal('hide');
-        } else if (ua.match(/iphone|ipad/)) {
-            modalIosSafari.modal('show');
-        } else {
-            modalIosSafari.modal('hide');
-        }
-    }
-}
-if (
-    document.readyState === "complete" ||
-    (document.readyState !== "loading" && !document.documentElement.doScroll)
-) {
-    onReadyHandler();
-} else {
-    document.addEventListener("DOMContentLoaded", onReadyHandler);
-}
-function onReadyHandler() {
-    setAccordion();
-    setModal();
-    setScrollObserver();
-}
+// function displayAlert() {
+//     if (page != undefined && page == 'lp202111') {
+//     } else {
+//         var windowSize = window.innerWidth;
+//         if (windowSize < 992 && windowSize >= 465) {
+//             $('#modal_qrcode').modal('show');
+//         } else {
+//             $('#modal_qrcode').modal('hide');
+//         }
+//     }
+// }
+// function checkIosVersion() {
+//     var ua = navigator.userAgent.toLowerCase();
+//     var modalIosSafari = $('#modal_ios_safari');
+//     if (ua.indexOf('edge') != -1 || ua.indexOf('chrome') != -1) {
+//         modalIosSafari.modal('hide');
+//     } else if (ua.indexOf('safari') != -1) {
+//         if (ua.match(/(iphone|ipad) os (1[4-9]|[2-9]\d)/)) {
+//             modalIosSafari.modal('hide');
+//         } else if (ua.match(/iphone|ipad/)) {
+//             modalIosSafari.modal('show');
+//         } else {
+//             modalIosSafari.modal('hide');
+//         }
+//     }
+// }
+// if (
+//     document.readyState === "complete" ||
+//     (document.readyState !== "loading" && !document.documentElement.doScroll)
+// ) {
+//     onReadyHandler();
+// } else {
+//     document.addEventListener("DOMContentLoaded", onReadyHandler);
+// }
+// function onReadyHandler() {
+//     setAccordion();
+//     setModal();
+//     setScrollObserver();
+// }
 
 $(document).ready(function () {
     $('footer').removeClass('d-none');

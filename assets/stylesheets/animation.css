@@ -1,1 +1,645 @@
-html body .animate-fade-in{opacity:0}html body .animate-fade-in.is-active{animation:fadeIn 1s ease-in-out .5s forwards}html body .animate-fade-in-up{opacity:0}html body .animate-fade-in-up.is-active{animation:fadeInUp .3s ease-in-out .5s forwards}html body .animate-fade-in-left{opacity:0}html body .animate-fade-in-left.is-active{animation:fadeInLeft .3s ease-in-out .5s forwards}html body .animate-fade-in-left-for-skin-checker-en{opacity:0}html body .animate-fade-in-left-for-skin-checker-en.is-active{animation:fadeInLeftForSkinCheckerEn .3s ease-in-out 0s forwards}html body .animate-fade-in-left-for-heading-en{opacity:0}html body .animate-fade-in-left-for-heading-en.is-active{animation:fadeInLeftForHeadingEn .3s ease-in-out 0s forwards}html body header{opacity:0;animation:fadeIn 1s ease-in-out 0s forwards}html body main .key_visual-toppage{opacity:0;animation:fadeIn 1s ease-in-out .2s forwards}html body main .list-article li .article-image.animate-image-slide-in-right div:before{height:100%;top:0;background-color:#ffebeb}html body main .list-article li .article-image.animate-image-slide-in-right div:after{width:100%;height:100%;top:0;background-color:#fff}html body main .list-article li .article-image.animate-image-slide-in-right.is-active div:before{animation:imageSlideInRight .75s ease .4s forwards;animation-timing-function:cubic-bezier(0, 0.99, 0, 0.99)}html body main .list-article li .article-image.animate-image-slide-in-right.is-active div:after{animation:imageSlideInRightInner 1.5s ease .4s forwards;animation-timing-function:cubic-bezier(0, 0.99, 0, 0.99)}html body main .list-article li .animate-fade-in-up.number{opacity:0}html body main .list-article li .animate-fade-in-up.is-active.number{animation:fadeInUp .3s ease-in-out 0s forwards}html body main .list-article li .animate-fade-in-up.title{opacity:0}html body main .list-article li .animate-fade-in-up.is-active.title{animation:fadeInUp .3s ease-in-out .2s forwards}html body main .key_visual-subpage,html body main .area-title,html body main .area-content{opacity:0;animation:fadeIn 1s ease-in-out .3s forwards}html body footer{opacity:0;animation:fadeIn 1s ease-in-out 1s forwards}html body a:hover,html body button:hover,html body .btn-open-links:hover{animation:blink .4s ease-in-out}html body a#btnInit{animation:btnSlideInRight 1s ease forwards;transition:.3s;position:relative;background-color:#fff}html body a#btnInit img{z-index:1000;position:relative}@keyframes delayedDisplay{0%{opacity:0}100%{opacity:1}}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@keyframes fadeInUp{0%{opacity:0;transform:translateY(10px)}100%{opacity:1;transform:translateY(0px)}}@keyframes fadeInLeftForHeadingEn{0%{opacity:0;transform:scale(0.7) translateX(10px)}100%{opacity:1;transform:scale(0.7) translateX(0px)}}@keyframes fadeInLeft{0%{opacity:0;transform:translateX(10px)}100%{opacity:1;transform:translateX(0px)}}@keyframes fadeInLeftForSkinCheckerEn{0%{opacity:0;transform:scale(0.6) translateX(10px)}100%{opacity:1;transform:scale(0.6) translateX(0px)}}@keyframes blink{0%{opacity:1;transition:.1s}20%{opacity:.5;transition:.1s}100%{opacity:1;transition:.1s}}@keyframes imageSlideInRight{0%{width:0%;left:0%}50%{width:100%;left:0%}65%{width:100%;left:0%}100%{width:0%;left:100%}}@keyframes imageSlideInRightInner{0%{left:0%}50%{left:100%}100%{left:100%}}@keyframes imageSlideInRightStay{0%{width:0%;left:0%;right:100%}15%{width:100%;left:0%;right:100%}100%{width:100%;left:0%;right:100%}}@keyframes btnSlideInRight{0%{background:linear-gradient(to right, #FB7598 0% 25%, #b4b4b4 25% 75%, #fff 75% 100%);background-size:400%;background-position-x:100%}30%{background:linear-gradient(to right, #FB7598 0% 25%, #b4b4b4 25% 75%, #fff 75% 100%);background-size:400%;background-position-x:100%}100%{background:linear-gradient(to right, #FB7598 0% 25%, #b4b4b4 25% 75%, #fff 75% 100%);background-size:400%;background-position-x:0%}}@keyframes btnSlideInRightInner{0%{left:0%}50%{left:100%}100%{left:100%}}html body .anim-slide-in>*{position:relative;display:inline-block}html body .anim-slide-in>*>*{display:inline-block;opacity:0;position:relative;z-index:1}html body .anim-slide-in>*::after{position:absolute;display:block;content:"";width:0%;height:calc(100% - 1px);background-color:#fff;top:0;left:0}html body .anim-slide-in.is-active>*>*{transition-property:opacity;transition-duration:.8s;transition-delay:.9s;opacity:1}html body .anim-slide-in.is-active>*::after{animation-name:display_effect1;animation-delay:.5s;animation-duration:.8s;animation-timing-function:cubic-bezier(0.2, 0, 0, 1)}html body .anim-fade-in{opacity:0;transition-property:opacity;transition-delay:.5s;transition-duration:1s}html body .anim-fade-in.is-active{opacity:1}@keyframes display_effect1{0%{width:0%;left:0;right:auto}50%{width:100%;left:0;right:auto}100%{width:100%;left:0;right:auto}}
+html body .animate-fade-in {
+  opacity: 0
+}
+html body .animate-fade-in.is-active {
+  animation: fadeIn 1s ease-in-out .5s forwards
+}
+html body .animate-fade-in-up {
+  opacity: 0
+}
+html body .animate-fade-in-up.is-active {
+  animation: fadeInUp .3s ease-in-out .5s forwards
+}
+html body .animate-fade-in-left {
+  opacity: 0
+}
+html body .animate-fade-in-left.is-active {
+  animation: fadeInLeft .3s ease-in-out .5s forwards
+}
+html body .animate-fade-in-left-for-skin-checker-en {
+  opacity: 0
+}
+html body .animate-fade-in-left-for-skin-checker-en.is-active {
+  animation: fadeInLeftForSkinCheckerEn .3s ease-in-out 0s forwards
+}
+html body .animate-fade-in-left-for-heading-en {
+  opacity: 0
+}
+html body .animate-fade-in-left-for-heading-en.is-active {
+  animation: fadeInLeftForHeadingEn .3s ease-in-out 0s forwards
+}
+html body header {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 0s forwards
+}
+html body main .key_visual-toppage {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out .2s forwards
+}
+html body main .list-article li .article-image.animate-image-slide-in-right div:before {
+  height: 100%;
+  top: 0;
+  background-color: #ffebeb
+}
+html body main .list-article li .article-image.animate-image-slide-in-right div:after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #fff
+}
+html body main .list-article li .article-image.animate-image-slide-in-right.is-active div:before {
+  animation: imageSlideInRight .75s ease .4s forwards;
+  animation-timing-function: cubic-bezier(0, 0.99, 0, 0.99)
+}
+html body main .list-article li .article-image.animate-image-slide-in-right.is-active div:after {
+  animation: imageSlideInRightInner 1.5s ease .4s forwards;
+  animation-timing-function: cubic-bezier(0, 0.99, 0, 0.99)
+}
+html body main .list-article li .animate-fade-in-up.number {
+  opacity: 0
+}
+html body main .list-article li .animate-fade-in-up.is-active.number {
+  animation: fadeInUp .3s ease-in-out 0s forwards
+}
+html body main .list-article li .animate-fade-in-up.title {
+  opacity: 0
+}
+html body main .list-article li .animate-fade-in-up.is-active.title {
+  animation: fadeInUp .3s ease-in-out .2s forwards
+}
+html body main .key_visual-subpage, html body main .area-title, html body main .area-content {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out .3s forwards
+}
+html body footer {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 1s forwards
+}
+html body a:hover, html body button:hover, html body .btn-open-links:hover {
+  animation: blink .4s ease-in-out
+}
+html body a#btnInit {
+  animation: btnSlideInRight 1s ease forwards;
+  transition: .3s;
+  position: relative;
+  background-color: #fff
+}
+html body a#btnInit img {
+  z-index: 1000;
+  position: relative
+}
+@keyframes delayedDisplay {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px)
+  }
+}
+@keyframes fadeInLeftForHeadingEn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateX(10px)
+  }
+  100% {
+    opacity: 1;
+    transform: scale(0.7) translateX(0px)
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px)
+  }
+}
+@keyframes fadeInLeftForSkinCheckerEn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6) translateX(10px)
+  }
+  100% {
+    opacity: 1;
+    transform: scale(0.6) translateX(0px)
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+    transition: .1s
+  }
+  20% {
+    opacity: .5;
+    transition: .1s
+  }
+  100% {
+    opacity: 1;
+    transition: .1s
+  }
+}
+@keyframes imageSlideInRight {
+  0% {
+    width: 0%;
+    left: 0%
+  }
+  50% {
+    width: 100%;
+    left: 0%
+  }
+  65% {
+    width: 100%;
+    left: 0%
+  }
+  100% {
+    width: 0%;
+    left: 100%
+  }
+}
+@keyframes imageSlideInRightInner {
+  0% {
+    left: 0%
+  }
+  50% {
+    left: 100%
+  }
+  100% {
+    left: 100%
+  }
+}
+@keyframes imageSlideInRightStay {
+  0% {
+    width: 0%;
+    left: 0%;
+    right: 100%
+  }
+  15% {
+    width: 100%;
+    left: 0%;
+    right: 100%
+  }
+  100% {
+    width: 100%;
+    left: 0%;
+    right: 100%
+  }
+}
+@keyframes btnSlideInRight {
+  0% {
+    background: linear-gradient(to right, #FB7598 0% 25%, #b4b4b4 25% 75%, #fff 75% 100%);
+    background-size: 400%;
+    background-position-x: 100%
+  }
+  30% {
+    background: linear-gradient(to right, #FB7598 0% 25%, #b4b4b4 25% 75%, #fff 75% 100%);
+    background-size: 400%;
+    background-position-x: 100%
+  }
+  100% {
+    background: linear-gradient(to right, #FB7598 0% 25%, #b4b4b4 25% 75%, #fff 75% 100%);
+    background-size: 400%;
+    background-position-x: 0%
+  }
+}
+@keyframes btnSlideInRightInner {
+  0% {
+    left: 0%
+  }
+  50% {
+    left: 100%
+  }
+  100% {
+    left: 100%
+  }
+}
+html body .anim-slide-in>* {
+  position: relative;
+  display: inline-block
+}
+html body .anim-slide-in>*>* {
+  display: inline-block;
+  opacity: 0;
+  position: relative;
+  z-index: 1
+}
+html body .anim-slide-in>*::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0%;
+  height: calc(100% - 1px);
+  background-color: #fff;
+  top: 0;
+  left: 0
+}
+html body .anim-slide-in.is-active>*>* {
+  transition-property: opacity;
+  transition-duration: .8s;
+  transition-delay: .9s;
+  opacity: 1
+}
+html body .anim-slide-in.is-active>*::after {
+  animation-name: display_effect1;
+  animation-delay: .5s;
+  animation-duration: .8s;
+  animation-timing-function: cubic-bezier(0.2, 0, 0, 1)
+}
+html body .anim-fade-in {
+  opacity: 0;
+  transition-property: opacity;
+  transition-delay: .5s;
+  transition-duration: 1s
+}
+html body .anim-fade-in.is-active {
+  opacity: 1
+}
+@keyframes display_effect1 {
+  0% {
+    width: 0%;
+    left: 0;
+    right: auto
+  }
+  50% {
+    width: 100%;
+    left: 0;
+    right: auto
+  }
+  100% {
+    width: 100%;
+    left: 0;
+    right: auto
+  }
+}
+
+#top-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background: #fff
+}
+html body .wrapper main {
+  padding-top: 0 !important
+}
+.themes-header {
+  display: none !important
+}
+.themes-header.header-fade-in {
+  display: flex !important
+}
+@keyframes sample01 {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+@media(min-width: 465px) {
+  .tmp-menu {
+    right: 0 !important
+  }
+}
+.meray-logo {
+  position: absolute;
+  left: 50%;
+  top: 730rem;
+  transform: translate(-50%, 0);
+  width: 440rem
+}
+.wrap-relative {
+  position: relative
+}
+.wrap-text-top {
+  position: relative
+}
+.top-selectyou {
+  position: relative
+}
+.top-selectyou .selectyou-logo {
+  position: absolute;
+  width: 624rem;
+  top: 707rem;
+  left: 65rem;
+  z-index: 10
+}
+.recommended-circle {
+  width: 171rem;
+  position: absolute;
+  z-index: 10;
+  right: 10px;
+  top: -15px
+}
+.select-sentence {
+  height: 5.7rem;
+  position: absolute;
+  transform: translateY(-2.5rem);
+  left: 0
+}
+.selectable-kit-img {
+  height: 11.7rem;
+  position: absolute;
+  transform: translate(13rem, -7.5rem);
+  left: 0
+}
+.top-product .row {
+  margin: 0
+}
+.top-product .col-6 {
+  padding: 0
+}
+html body .wrapper main .list-article li a .article-image>div {
+  width: 100%
+}
+html body .wrapper main .list-article li a section .number {
+  font-size: 28rem;
+  font-weight: 300;
+  letter-spacing: .05em;
+  margin-right: -0.05em;
+  margin: 0;
+  line-height: 1.5em;
+  margin-left: 0;
+  margin-top: 0;
+  z-index: 800
+}
+html body .wrapper main .list-article li a section .title {
+  font-size: 28rem;
+  font-weight: 300;
+  letter-spacing: .1em;
+  margin-right: -0.1em;
+  line-height: 1.5em;
+  margin: 0;
+  margin-left: 16rem;
+  padding: 0
+}
+img.title {
+  margin-bottom: 78rem
+}
+.list-article {
+  padding: 0 15px 15px !important;
+  margin-bottom: 0 !important
+}
+html body .wrapper main .list-article li a section {
+  padding-top: 8px !important
+}
+.index-mainvisual {
+  position: relative;
+  margin-bottom: 180rem
+}
+.index-mainvisual .mainvisual-title {
+  position: absolute;
+  left: 50%;
+  top: 730rem;
+  transform: translate(-50%, 0);
+  width: 440rem
+}
+.index-mainvisual.js-scroll-trigger .mainvisual-image, .index-mainvisual.js-scroll-trigger .mainvisual-title {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1.5s
+}
+.index-mainvisual.js-scroll-trigger .mainvisual-title {
+  transition-delay: .75s
+}
+.index-mainvisual.js-scroll-trigger.is-active .mainvisual-image, .index-mainvisual.js-scroll-trigger.is-active .mainvisual-title {
+  opacity: 1
+}
+.index-mainvisual.js-scroll-trigger.is-active .mainvisual-image img {
+  width: 500px;
+  height: 590px;
+  object-fit: cover;
+}
+article.index .about-concept-catch {
+  margin-bottom: 130rem
+}
+article.index .about-concept-catch .catch-item:nth-child(1) {
+  margin-left: 175rem
+}
+article.index .about-concept-catch .catch-item:nth-child(2) {
+  margin-left: 358rem
+}
+article.index .about-concept-catch .catch-item:nth-child(2).is-active>p>span {
+  transition-delay: .9s
+}
+article.index .about-concept-catch .catch-item:nth-child(2).is-active>p::after {
+  animation-delay: .5s
+}
+article.index.is-first .about-concept-catch .catch-item:nth-child(2).is-active>p>span {
+  transition-delay: 1.3s
+}
+article.index.is-first .about-concept-catch .catch-item:nth-child(2).is-active>p::after {
+  animation-delay: .9s
+}
+.index-products {
+  padding-top: 150rem;
+  padding-bottom: 180rem
+}
+.product-item-large {
+  margin-bottom: 80rem;
+  position: relative
+}
+.product-item-large::after {
+  background: url(https://system.meray.tokyo/images/index/mark_recommended.svg) center center no-repeat;
+  background-size: contain;
+  content: "";
+  width: 171rem;
+  height: 171rem;
+  position: absolute;
+  right: 30rem;
+  top: -35rem
+}
+.product-item-large .item-caption {
+  width: 670rem;
+  margin: auto
+}
+.product-items {
+  width: 670rem;
+  margin: 0 auto -30rem auto;
+  display: flex;
+  flex-wrap: wrap
+}
+.product-items .product-item {
+  flex-basis: 48.35%;
+  flex-shrink: 0;
+  margin-right: 2.2%;
+  margin-bottom: 30rem
+}
+.product-items .product-item:nth-child(2n) {
+  margin-right: 0
+}
+.product-item .item-thumbnail {
+  width: 100%;
+  margin-bottom: 15rem
+}
+.product-item .item-caption {
+  text-align: left
+}
+.product-item .item-caption .caption-en {
+  font-size: 27rem;
+  letter-spacing: .04em;
+  margin-bottom: 8rem
+}
+.product-item .item-caption .caption-ja {
+  font-size: 18rem;
+  letter-spacing: .02em
+}
+.index-selectable {
+  background-color: #fff5f5;
+  padding-bottom: 120rem
+}
+.index-selectable .selectable-visual {
+  position: relative;
+  margin-bottom: 170rem
+}
+.index-selectable .selectable-visual .visual-catch {
+  position: absolute;
+  bottom: -94rem;
+  left: 60rem;
+  width: 0;
+  overflow: hidden
+}
+.index-selectable .selectable-visual .visual-catch img {
+  width: 624rem;
+  max-width: initial
+}
+.index-selectable .selectable-visual.js-scroll-trigger .visual-image {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1.5s
+}
+.index-selectable .selectable-visual.js-scroll-trigger .visual-catch {
+  width: 0;
+  transition-property: width;
+  transition-duration: .75s;
+  transition-delay: 1s
+}
+.index-selectable .selectable-visual.js-scroll-trigger.is-active .visual-image {
+  opacity: 1
+}
+.index-selectable .selectable-visual.js-scroll-trigger.is-active .visual-image img {
+width: 413px;
+height: 413px;
+object-fit: cover;
+}
+.index-selectable .selectable-visual.js-scroll-trigger.is-active .visual-catch {
+  width: 624rem
+}
+.index-selectable .selectable-title {
+  font-size: 34rem;
+  letter-spacing: .08em;
+  line-height: 1.64;
+  text-align: center;
+  margin-bottom: 50rem
+}
+.index-selectable .selectable-sentence {
+  font-size: 28rem;
+  letter-spacing: .04em;
+  line-height: 1.78;
+  width: 71.33%;
+  margin: auto
+}
+.index-selectable .selectable-sentence p+p {
+  margin-top: 1em
+}
+.index-readings {
+  padding-top: 190rem;
+  padding-bottom: 30rem
+}
+.index-readings .section-head {
+  margin-bottom: 130rem
+}
+.reading-items {
+  width: 670rem;
+  margin: auto
+}
+.reading-item+.reading-item {
+  margin-top: 80rem
+}
+.reading-item .item-thumbnail {
+  width: 100%;
+  margin-bottom: 20rem
+}
+.reading-item .item-thumbnail img {
+  width: 386px;
+  height: 241px;
+  object-fit: cover;
+}
+.reading-item .item-thumbnail>::after {
+  background-color: #fff5f5
+}
+.reading-item .item-caption {
+  display: flex;
+  align-items: flex-start
+}
+.reading-item .item-caption>* {
+  font-size: 28rem;
+  font-weight: 300;
+  line-height: 1.64;
+  letter-spacing: .1em
+}
+.reading-item .item-caption>*.is-active {
+  animation: fadeInUp .3s ease-in-out 0s forwards
+}
+.reading-item .item-category {
+  margin-top: 8rem;
+  font-size: 16rem;
+  letter-spacing: .1em
+}
+.reading-item .item-category a {
+  color: #6e6e6e
+}
+.reading-item .caption-number {
+  margin-right: .5em
+}
+.index-news {
+  padding-top: 150rem;
+  padding-bottom: 165rem
+}
+.index-news .section-head {
+  margin-bottom: 125rem
+}
+.news-items {
+  list-style-type: none;
+  width: 670rem;
+  margin: auto
+}
+.news-items .news-item+.news-item {
+  margin-top: 36rem
+}
+.news-items .item-subject {
+  display: block;
+  font-size: 26rem;
+  letter-spacing: .1em;
+  line-height: 1.92;
+  margin-bottom: 3rem
+}
+.news-items .item-date {
+  color: #6e6e6e;
+  display: block;
+  font-size: 16rem;
+  letter-spacing: .1em
+}
