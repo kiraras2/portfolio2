@@ -18,10 +18,6 @@ function onReadyHandler() {
     setScrollObserver();
 }
 
-// window.addEventListener('load', function () {
-//     onLoadHandler();
-// })
-
 // function onLoadHandler() {
 //     const elms = document.querySelectorAll('.js-shuffleHeadline');
 //     if (elms !== null) {

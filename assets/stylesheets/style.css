@@ -1045,6 +1045,7 @@ html body .wrapper main .tag_sort ul li a {
   background-color: #f5f5f5;
   padding: 6rem 18rem
 }
+
 html body .wrapper main .tag_sort ul li a:hover, html body .wrapper main .tag_sort ul li a:focus {
   text-decoration: none;
   background-color: #b4b4b4;

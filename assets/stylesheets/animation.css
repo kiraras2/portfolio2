@@ -4,6 +4,7 @@ html body .animate-fade-in {
 html body .animate-fade-in.is-active {
   animation: fadeIn 1s ease-in-out .5s forwards
 }
+
 html body .animate-fade-in-up {
   opacity: 0
 }

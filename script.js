@@ -143,6 +143,7 @@ function setModal() {
     })
 }
 
+
 function setScrollObserver() {
     const observer = new IntersectionObserver(onHideVisual, {
         root: null,
