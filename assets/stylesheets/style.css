@@ -7,7 +7,6 @@ body main {
 }
 .is-bold {
   font-family: "punctuation-bold", aktiv-grotesk, "A+tanp- StdN W6", "Koburina Gothic Std W6", " Std W6", "A+tanp- StdN W1", "Koburina Gothic Std W1", sans-serif !important;
-  font-weight: 500 !important
 }
 img {
   height: auto
@@ -656,7 +655,9 @@ a, a:hover {
   display: inline-block;
   min-height: 1em;
   position: relative
+
 }
+
 .section-title>span::after {
   content: "";
   width: 0%;
@@ -914,8 +915,6 @@ html body .wrapper {
 }
 html body .wrapper header {
   height: 120rem;
-  padding-left: 40rem;
-  padding-right: 32rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1631,7 +1630,7 @@ html body .aside-qrcode p {
   font-feature-settings: "palt" 1;
   -webkit-font-feature-settings: "palt" 1;
   font-style: normal;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 300;
   letter-spacing: .1em;
   margin-right: -0.1em;
@@ -1874,7 +1873,7 @@ a.btn-qanda:hover {
 .themes-header .wrap-themes-icon-right {
   display: flex;
   align-items: center;
-  margin-right: 58rem;
+  margin-right: 92rem;
   transition: .3s
 }
 .themes-header .wrap-themes-icon-right .themes-mypage-icon {
@@ -1937,8 +1936,9 @@ body.menu-opened .themes-header .wrap-themes-icon-right .themes-nav-icon span:nt
   display: inline-block
 }
 .logo-original p {
-font-size: 18px;
+font-size: 17px;
 font-weight: bold;
+margin-left: 10px;
 }
 .tmp-menu {
   display: block;
