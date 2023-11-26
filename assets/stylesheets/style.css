@@ -532,18 +532,6 @@ article.is-first .about-concept-picture1>div.is-active>*::after {
   padding-right: 1em;
   position: relative;
 }
-/* .buy-variation a.link-arrow span::after {
-  content: "";
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2212px%22%20height%3D%2212px%22%20viewBox%3D%220%200%2012%2012%22%20enable-background%3D%22new%200%200%2012%2012%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23000000%22%20points%3D%222.606%2C0.724%209.394%2C6%202.606%2C11.276%20%22%2F%3E%3C%2Fsvg%3E");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 12rem;
-  height: 12rem;
-  font-size: .8em;
-  position: absolute;
-  top: calc(50% - 6rem);
-  right: 0
-} */
 .buy-variation .variation-content {
   margin-top: 50rem;
 }
@@ -715,19 +703,6 @@ a, a:hover {
   padding-right: 1em;
   position: relative;
 }
-/* .accordion-more span::after, .accordion-close span::after {
-  content: "";
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2212px%22%20height%3D%2212px%22%20viewBox%3D%220%200%2012%2012%22%20enable-background%3D%22new%200%200%2012%2012%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20fill%3D%22%23000000%22%20points%3D%222.606%2C0.724%209.394%2C6%202.606%2C11.276%20%22%2F%3E%3C%2Fsvg%3E");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 12rem;
-  height: 12rem;
-  font-size: .8em;
-  position: absolute;
-  top: calc(50% - 6rem);
-  right: 0;
-  transform: rotate(-90deg)
-} */
 .accordion-more span::after {
   transform: rotate(90deg);
 }
@@ -740,28 +715,6 @@ a, a:hover {
   margin-bottom: 30rem;
   position: relative;
 }
-/* .accordion-trigger-minus::after {
-  content: "";
-  width: 35rem;
-  height: 35rem;
-  background: url(https://system.meray.tokyo/images/common/accordion-plus.svg) no-repeat;
-  background-size: contain;
-  border: solid 1px #b4b4b4;
-  border-radius: 18rem;
-  position: absolute;
-  top: 10rem;
-  right: 10rem;
-  transform: rotate(-90deg);
-  transition-property: transform;
-  transition-duration: .5s
-}
-.accordion-wrapper.is-open .accordion-more {
-  display: none
-}
-.accordion-wrapper.is-open .accordion-trigger-minus::after {
-  background-image: url(https://system.meray.tokyo/images/common/accordion-minus.svg);
-  transform: rotate(0deg)
-} */
 .accordion-body {
   display: none;
   overflow: hidden;
@@ -779,72 +732,6 @@ a, a:hover {
 .area-qanda-content .btn-qanda-title {
   background-image: none;
 }
-/* .modal-trigger {
-  cursor: pointer
-}
-.modal-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 1020;
-  display: none
-}
-.modal-inner {
-  width: 100%;
-  height: 100%;
-  max-width: 464px;
-  margin: auto;
-  background-color: #f5f5f5
-}
-.modal-contents {
-  position: relative;
-  width: 100%;
-  max-height: 100vh;
-  padding: 130rem 37.5rem;
-  font-size: 22rem;
-  line-height: 1.63;
-  overflow: auto
-}
-.modal-contents p+p {
-  margin-top: 1em
-}
-.modal-close {
-  position: absolute;
-  width: 36rem;
-  height: 36rem;
-  background: url(https://system.meray.tokyo/images/common/modal-close.svg) no-repeat;
-  background-size: contain;
-  top: 50rem;
-  right: 45rem;
-  cursor: pointer
-} */
-@font-face {
-  font-family: "punctuation-light";
-  font-feature-settings: normal;
-  -webkit-font-feature-settings: normal;
-  src: url("https://cdn.shopify.com/s/files/1/0510/8203/5390/t/1/assets/Mplus1p-Light.ttf") format("truetype");
-  unicode-range: U+3001, U+3002, U+FF11
-}
-@font-face {
-  font-family: "punctuation-bold";
-  font-feature-settings: normal;
-  -webkit-font-feature-settings: normal;
-  src: url("https://cdn.shopify.com/s/files/1/0510/8203/5390/t/1/assets/Mplus1p-Bold.ttf") format("truetype");
-  unicode-range: U+3001, U+3002, U+FF11
-}
-/* @media(max-width: 464px) {
-  #modal_qrcode {
-    display: none
-  }
-  .modal-backdrop {
-    display: none
-  }
-  body.modal-open {
-    overflow: auto
-  }
-} */
 html.iphone, html.ipad {
   font-size: calc(.0026666667*(100vw - 3.95px)/2);
 }
@@ -1636,123 +1523,6 @@ html body .aside-qrcode p {
   margin-right: -0.1em;
   line-height: 2em;
 }
-/* html body .modal {
-  z-index: 8000
-}
-html body .modal>div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh
-}
-html body .modal>div .modal-dialog {
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
-  border: 0;
-  background-color: #f0f0f0
-}
-html body .modal>div .modal-dialog .modal-content {
-  padding: 52px 62px 50px;
-  background-color: #f0f0f0;
-  border: 0;
-  text-align: center;
-  position: relative
-}
-html body .modal>div .modal-dialog .modal-content .modal-header {
-  border: 0;
-  position: fixed;
-  left: 0;
-  top: 16px;
-  width: 100%;
-  padding-right: 15px;
-  max-width: 464px;
-  min-width: 320px;
-  margin: 0 auto;
-  z-index: 2000
-}
-html body .modal>div .modal-dialog .modal-content .modal-header .close-modal-qrcode {
-  display: block;
-  margin-left: auto;
-  margin-right: 0
-}
-html body .modal>div .modal-dialog .modal-content .modal-header .close-modal-qrcode img {
-  width: 27px
-}
-html body .modal>div .modal-dialog .modal-content .logo {
-  font-size: 20px;
-  letter-spacing: .3em;
-  margin-right: -0.3em;
-  font-weight: 300
-}
-html body .modal>div .modal-dialog .modal-content .logo>img {
-  width: 154rem
-}
-html body .modal>div .modal-dialog .modal-content .logo+img {
-  width: 185px;
-  margin-top: 18px;
-  margin-bottom: 20px
-}
-html body .modal>div .modal-dialog .modal-content p {
-  font-family: "punctuation-light", aktiv-grotesk, "A+tanp-こぶりなゴシック StdN W1", "こぶりなゴシック Std W1", "メイリオ", sans-serif;
-  font-feature-settings: "palt" 1;
-  -webkit-font-feature-settings: "palt" 1;
-  font-style: normal;
-  font-size: 13px;
-  letter-spacing: .1em;
-  line-height: 2em;
-  word-break: break-all;
-  transform: translateX(-25rem);
-  width: calc(100% + 50rem)
-}
-html body .modal:not(.off-modal)>div .modal-dialog .modal-header {
-  position: absolute
-}
-html body .modal#modal_ios_safari .modal-dialog {
-  width: 100%;
-  max-width: 305px
-}
-html body .modal#modal_ios_safari .modal-dialog .modal-content {
-  padding: 83px 28px 28px 28px
-}
-html body .modal#modal_ios_safari .modal-dialog .modal-content .modal-header .close-modal-ios-safari {
-  display: block;
-  margin-left: auto;
-  margin-right: 0
-}
-html body .modal#modal_ios_safari .modal-dialog .modal-content .modal-header .close-modal-ios-safari img {
-  width: 27px
-}
-html body .modal#modal_ios_safari .modal-dialog .modal-content .logo {
-  font-size: 42px;
-  line-height: 1em;
-  font-weight: 300;
-  letter-spacing: .05em;
-  margin-right: -0.05em;
-  margin-bottom: 32px
-}
-html body .modal#modal_ios_safari .modal-dialog .modal-content p {
-  font-size: 12px;
-  line-height: 1.87em;
-  letter-spacing: .1em;
-  margin-right: -0.1em;
-  margin-bottom: 30px
-}
-html body .modal#modal_ios_safari .modal-dialog .modal-content a.btn {
-  font-size: 12px;
-  line-height: 1em;
-  letter-spacing: .1em;
-  padding: 20px 0;
-  display: block;
-  background-color: #fff;
-  color: #000;
-  text-align: center
-}
-html body .modal#modal_ios_safari .modal-dialog .modal-content a.btn+a.btn {
-  margin-top: 6px
-}
-html body .modal-backdrop {
-  background-color: rgba(0, 0, 0, 0)
-} */
 .page-plain {
   padding-top: 120rem
 }
@@ -1820,25 +1590,6 @@ a.btn-qanda:hover {
   font-weight: 500;
   margin: 112rem 0 74rem;
 }
-/* .btn-qanda-title {
-  background-image: url(../../../images/q_and_a/btn-icon-plus.svg);
-  background-repeat: no-repeat;
-  background-position: calc(100% - 26rem) center;
-  background-size: 34rem;
-  background-color: #f5f5f5;
-  padding: 28rem 26rem;
-  display: flex;
-  margin-bottom: 10rem
-}
-.btn-qanda-title:hover {
-  cursor: pointer
-}
-.btn-qanda-title.on {
-  background-image: url(../../../images/q_and_a/btn-icon-minus.svg);
-  background-repeat: no-repeat;
-  background-position: calc(100% - 26rem) center;
-  background-size: 34rem
-} */
 .btn-qanda-text {
   padding: 15rem 26rem 0 26rem;
   margin-bottom: 84.2rem;
@@ -2064,7 +1815,7 @@ footer .wrap-themes-nav .top-title {
 }
 .wrap-footer-area .wrap-themes-nav li a span.text-nav-small {
   font-size: 19rem;
-  font-weight: 300;
+  font-weight: bold;
 }
 .wrap-footer-area .wrap-themes-nav li a img {
   height: 85rem;
@@ -2134,21 +1885,6 @@ footer .wrap-sns a img {
   letter-spacing: 1.7px;
   font-weight: bold;
 }
-/* .off-text {
-  letter-spacing: 1px;
-  font-size: 20px !important;
-  color: #000 !important
-} */
-/* .off-modal p {
-  line-height: 75rem !important;
-  margin: 160rem 0 100rem;
-  font-weight: bold
-}
-.off-text .s-text {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 51px !important
-} */
 .bottom-space {
   margin-top: 100rem;
   margin-bottom: 60px;
@@ -2288,234 +2024,42 @@ li.title {
   letter-spacing: .18em;
   text-decoration: none;
   width: 100% !important
-} */
-/* .form-vertical input[type=submit].btn.btn-line-customer-login:hover {
-  background-color: #f87799 !important
 }
-.create-account input.btn.text-center {
-  background-position: 85px 51% !important
+@media(min-width: 465px) {
+html.iphone, html.ipad {
+  font-size: .6133333333px
 }
-:not(.page-register) .title-create-account {
-  font-size: 35rem !important;
-  font-family: "punctuation-bold", aktiv-grotesk, "A+tanp-こぶりなゴシック StdN W6", "Koburina Gothic Std W6", "こぶりなゴシック Std W6", "メイリオ", sans-serif;
-  font-feature-settings: "palt" 1;
-  -webkit-font-feature-settings: "palt" 1;
-  font-style: normal;
-  line-height: 1;
-  letter-spacing: .07em;
-  font-weight: 500;
-  text-align: center;
-  margin-top: 120rem !important;
-  margin-bottom: 60rem !important
+html {
+  font-size: .6186666667px
 }
-.hr-create-account {
-  border-top: solid 1px #b4b4b4
+html body {
+  background-color: #fff5f5
 }
-#CustomerEmail, #CustomerPassword, #RegisterForm-LastName, #RegisterForm-FirstName, #RegisterForm-email, #RegisterForm-password, #RecoverEmail, #ResetPassword, #PasswordConfirmation {
-  border: none;
-  background-color: #f5f5f5
-}
-.link-create-account a, #HideRecoverPasswordLink {
-  display: block;
-  text-align: left;
-  color: #000;
-  background-color: inherit;
-  background-image: url(../../../images/mypage/arrow-right-02.svg);
-  background-repeat: no-repeat;
-  background-position: 10.9em center;
-  background-size: 8rem;
-  padding-right: 39rem;
-  margin: 32rem 0;
-  letter-spacing: .04em
-}
-.link-create-account:hover a, #HideRecoverPasswordLink:hover {
-  display: block;
-  text-align: left;
-  color: #000;
-  text-decoration: underline
-}
-#HideRecoverPasswordLink, #HideRecoverPasswordLink:hover {
-  text-align: center !important;
-  background-image: url(../../../images/cart/arrow-left.png);
-  background-position: 0;
-  width: 55px;
-  margin: 0 auto;
-  padding: 0
-}
-.title-create-account+p {
-  margin-top: -30rem;
-  margin-bottom: 60rem
-}
-.line-customer-login {
-  margin-bottom: 32rem
-}
-.btn-line-customer-login {
-  background-position: 45px 51% !important
-}
-.img-line-customer-login {
-  margin-bottom: 60rem
-}
-.thanks-line-login {
-  font-size: 36rem;
-  line-height: 1;
-  letter-spacing: .07em;
-  font-weight: 500;
-  color: #fff;
-  padding: 98rem 0;
-  background-color: inherit;
-  background-image: url(https://system-staging.meray.tokyo/images/cart/bg-btn-line-y.png);
-  background-size: cover;
-  background-position: 50% 51%;
-  border: none;
-  margin: 36rem auto 60rem;
-  border-radius: 10rem;
-  width: 100%;
-  letter-spacing: .18em;
-  font-family: "punctuation-bold", aktiv-grotesk, "A+tanp-こぶりなゴシック StdN W6", "Koburina Gothic Std W6", "こぶりなゴシック Std W6", "メイリオ", sans-serif;
-  font-feature-settings: "palt" 1;
-  -webkit-font-feature-settings: "palt" 1;
-  font-style: normal;
-  background-image: url(https://system-staging.meray.tokyo/images/cart/bg-btn-line-login-y.png);
-  background-position: 50% 52%;
-  text-align: center;
-  display: block;
-  width: 90%
-}
-.thanks-line-login:hover {
-  color: #fff !important;
-  text-decoration: none !important
-}
-.text-thanks-line {
-  text-align: justify;
-  font-size: 26rem;
-  line-height: 1.78em;
-  letter-spacing: .07em;
-  font-weight: 300;
-  margin: 44rem auto 54rem;
-  padding: 0;
-  width: 90%
-}
-.link-connected_with_line {
-  margin: 40rem 0;
-  display: block
-}
-.text-connected_with_line {
-  text-align: left;
-  font-size: 32rem !important
-}
-.li.title {
-  margin-top: 90rem;
-  font-size: 16rem;
-  font-family: "punctuation-bold", aktiv-grotesk, "A+tanp-こぶりなゴシック StdN W6", "Koburina Gothic Std W6", "こぶりなゴシック Std W6", "メイリオ", sans-serif;
-  font-feature-settings: "palt" 1;
-  -webkit-font-feature-settings: "palt" 1;
-  font-style: normal;
-  margin-bottom: 27rem;
-  font-weight: 300;
-  letter-spacing: .13em
-}
-.product-form__cart-submit {
-  background-color: rgba(0, 0, 0, 0)
-}
-.password-content {
-  font-size: 14px;
-  padding-top: 16px
-}
-#LoginModal .btn.btn--narrow {
-  color: #fff;
-  font-size: 12px;
-  border: 1px solid #000
-}
-#LoginModal .btn.btn--narrow:hover {
-  color: #000;
-  border: 1px solid #000;
-  font-size: 12px
-}
-.product-recommendations__inner {
+html body .d-xs-none {
   display: none !important
 }
-#AddressNewForm {
-  padding: 30rem !important;
-  margin-top: 70rem
+html body .wrapper main .key_visual-toppage .tagline-vertical {
+  transform: scale(0.9) rotate(90deg) translate(250rem, 18rem)
 }
-.shipping-button {
-  font-weight: 300 !important
+html body .wrapper main .key_visual-toppage _:lang(x)+_:-webkit-full-screen-document, html body .wrapper main .key_visual-toppage .tagline-vertical {
+  transform: scale(0.9) rotate(90deg) translate(250rem, 18rem)
 }
-.items-price.discount {
-  color: #fa7598
+html body .wrapper footer .copyright {
+  transform: scale(0.8)
 }
-/* .modal#updatePriceModal {
-  transform: translateY(0px) !important
 }
-.modal-dialog.gift {
-  max-width: 100% !important
+@media(min-width: 992px) {
+html body .aside-logo, html body .aside-qrcode {
+  display: flex
 }
-.modal-backdrop.show {
-  display: none !important
-} */
-/* .button-spmenu {
-  display: block;
-  width: 50rem;
-  height: 50rem;
-  position: absolute;
-  top: 36rem;
-  right: 38rem;
-  z-index: 9010;
-  cursor: pointer
+html body #modal_qrcode {
+  display: none
 }
-.icon-animation {
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: relative
+html body .modal-backdrop {
+  display: none
 }
-.icon-animation span {
-  width: 50rem;
-  height: 1px;
-  display: block;
-  background: #000;
-  position: absolute;
-  left: 50%;
-  top: calc(50% - .5px);
-  margin-left: -25rem;
-  transition: all .3s
+html body body.modal-open {
+  overflow: auto
 }
-.icon-animation .top {
-  transform: translateY(-15rem) scale(1)
 }
-.icon-animation .middle {
-  background: none;
-  position: relative
-}
-.icon-animation .middle::before, .icon-animation .middle::after {
-  transition: all .3s;
-  content: "";
-  width: 50rem;
-  height: 1px;
-  background: #000;
-  display: block;
-  transform: rotate(0deg);
-  position: absolute
-}
-.icon-animation .bottom {
-  transform: translateY(15rem) scale(1)
-}
-body.menu-opened .icon-animation .top {
-  transform: translateY(0px) scale(0)
-}
-body.menu-opened .icon-animation .bottom {
-  transform: translateY(0px) scale(0)
-}
-body.menu-opened .icon-animation .middle:before {
-  transform: rotate(45deg) scaleX(1);
-  background: #000
-}
-body.menu-opened .icon-animation .middle:after {
-  transform: rotate(-45deg) scaleX(1);
-  background: #000
-}
-body.scroll-disabled {
-  position: fixed;
-  width: 100%;
-  height: 100%
-} */
+

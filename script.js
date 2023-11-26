@@ -1,4 +1,4 @@
-var page = 'top';
+const page = 'top';
 
 document.ontouchstart = function () { };
 document.addEventListener('touchstart', function () { }, true);
@@ -54,7 +54,6 @@ function scrollAnimation() {
 
 $(document).ready(function () {
     $('footer').removeClass('d-none');
-    checkIosVersion();
 
     $('a[href^="#"]').click(function () {
         var h2Hight = 155;
@@ -86,25 +85,6 @@ function setAccordion() {
     })
 }
 
-function setModal() {
-    $('.modal-trigger').on('click', function () {
-        const target = $(this).attr('data-target');
-        if ($(target).length > 0) {
-            $('.modal-wrapper').find('.modal-body').hide();
-            $(target).show()
-            $('.modal-wrapper').fadeIn();
-            disableScrolling();
-        }
-    })
-    $('.modal-wrapper').on('click', function (e) {
-        if ($(e.target).closest('.modal-body').length == 0) {
-            $('.modal-wrapper').fadeOut();
-            enableScrolling();
-        }
-    })
-}
-
-
 function setScrollObserver() {
     const observer = new IntersectionObserver(onHideVisual, {
         root: null,
@@ -125,4 +105,13 @@ function onHideVisual(entries, observer) {
             document.body.classList.add("is-scroll");
         }
     });
+}
+
+let auto_redirect = localStorage.getItem('return_to');
+if (auto_redirect) {
+    localStorage.removeItem('return_to');
+    window.location.href = auto_redirect;
+}
+else {
+    $('#top-loading').addClass('d-none');
 }
