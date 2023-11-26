@@ -17,42 +17,6 @@ function onReadyHandler() {
     }
     setScrollObserver();
 }
-
-// function onLoadHandler() {
-//     const elms = document.querySelectorAll('.js-shuffleHeadline');
-//     if (elms !== null) {
-//         const observer = new IntersectionObserver(startShuffle, {
-//             root: null,
-//             rootMargin: '-50px 0%',
-//             threshold: 1,
-//         });
-//         elms.forEach((elm) => {
-//             const inner = elm.querySelector('span');
-//             inner.style.opacity = '';
-//             inner.style.width = (inner.clientWidth + 12) + 'px';
-//             inner.style.textAlign = 'center';
-//             inner.textContent = '';
-//             observer.observe(elm);
-//         });
-//     }
-// }
-
-// function startShuffle(entries, observerStop) {
-//     entries.forEach((entry) => {
-//         if (!entry.isIntersecting) {
-//             return;
-//         }
-//         const letter = $(entry.target).children('span').attr('data-letters');
-//         setTimeout(function () {
-//             $(entry.target).children('span').shuffleLetters({
-//                 text: letter
-//             });
-//         }, 500)
-//         entry.target.classList.add('is-display')
-//         observerStop.unobserve(entry.target);
-//     });
-// }
-
 window.addEventListener('scroll', function () {
     onScrollHandler();
 })
@@ -62,7 +26,6 @@ function onScrollHandler() {
         document.querySelector('article').classList.remove('is-first');
     }
 }
-
 let scroll_top = 0;
 
 function disableScrolling() {
@@ -76,4 +39,3 @@ function enableScrolling() {
     window.document.body.style.top = '';
     document.scrollingElement.scrollTop = scroll_top;
 }
-

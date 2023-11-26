@@ -1,30 +1,30 @@
 html body .animate-fade-in {
-  opacity: 0
+  opacity: 0;
 }
 html body .animate-fade-in.is-active {
   animation: fadeIn 1s ease-in-out .5s forwards
 }
 
 html body .animate-fade-in-up {
-  opacity: 0
+  opacity: 0;
 }
 html body .animate-fade-in-up.is-active {
   animation: fadeInUp .3s ease-in-out .5s forwards
 }
 html body .animate-fade-in-left {
-  opacity: 0
+  opacity: 0;
 }
 html body .animate-fade-in-left.is-active {
   animation: fadeInLeft .3s ease-in-out .5s forwards
 }
 html body .animate-fade-in-left-for-skin-checker-en {
-  opacity: 0
+  opacity: 0;
 }
 html body .animate-fade-in-left-for-skin-checker-en.is-active {
   animation: fadeInLeftForSkinCheckerEn .3s ease-in-out 0s forwards
 }
 html body .animate-fade-in-left-for-heading-en {
-  opacity: 0
+  opacity: 0;
 }
 html body .animate-fade-in-left-for-heading-en.is-active {
   animation: fadeInLeftForHeadingEn .3s ease-in-out 0s forwards
@@ -46,7 +46,7 @@ html body main .list-article li .article-image.animate-image-slide-in-right div:
   width: 100%;
   height: 100%;
   top: 0;
-  background-color: #fff
+  background-color: #fff;
 }
 html body main .list-article li .article-image.animate-image-slide-in-right.is-active div:before {
   animation: imageSlideInRight .75s ease .4s forwards;
@@ -57,13 +57,13 @@ html body main .list-article li .article-image.animate-image-slide-in-right.is-a
   animation-timing-function: cubic-bezier(0, 0.99, 0, 0.99)
 }
 html body main .list-article li .animate-fade-in-up.number {
-  opacity: 0
+  opacity: 0;
 }
 html body main .list-article li .animate-fade-in-up.is-active.number {
   animation: fadeInUp .3s ease-in-out 0s forwards
 }
 html body main .list-article li .animate-fade-in-up.title {
-  opacity: 0
+  opacity: 0;
 }
 html body main .list-article li .animate-fade-in-up.is-active.title {
   animation: fadeInUp .3s ease-in-out .2s forwards
@@ -83,11 +83,11 @@ html body a#btnInit {
   animation: btnSlideInRight 1s ease forwards;
   transition: .3s;
   position: relative;
-  background-color: #fff
+  background-color: #fff;
 }
 html body a#btnInit img {
   z-index: 1000;
-  position: relative
+  position: relative;
 }
 @keyframes delayedDisplay {
   0% {
@@ -421,10 +421,10 @@ html body .wrapper main .list-article li a section {
 .index-mainvisual.js-scroll-trigger .mainvisual-image, .index-mainvisual.js-scroll-trigger .mainvisual-title {
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 1.5s
+  transition-duration: 1.5s;
 }
 .index-mainvisual.js-scroll-trigger .mainvisual-title {
-  transition-delay: .75s
+  transition-delay: .75s;
 }
 .index-mainvisual.js-scroll-trigger.is-active .mainvisual-image, .index-mainvisual.js-scroll-trigger.is-active .mainvisual-title {
   opacity: 1
@@ -499,7 +499,7 @@ article.index.is-first .about-concept-catch .catch-item:nth-child(2).is-active>p
   text-align: left
 }
 .product-item .item-caption .caption-en {
-  font-size: 25rem;
+  font-size: 24rem;
   letter-spacing: .04em;
   margin-bottom: 8rem
 }
@@ -529,7 +529,7 @@ article.index.is-first .about-concept-catch .catch-item:nth-child(2).is-active>p
 .index-selectable .selectable-visual.js-scroll-trigger .visual-image {
   opacity: 0;
   transition-property: opacity;
-  transition-duration: 1.5s
+  transition-duration: 1.5s;
 }
 .index-selectable .selectable-visual.js-scroll-trigger .visual-catch {
   width: 0;
@@ -554,35 +554,36 @@ object-fit: cover;
   letter-spacing: .08em;
   line-height: 1.64;
   text-align: center;
-  margin-bottom: 50rem
+  margin-bottom: 50rem;
+  font-weight: bold;
 }
 .index-selectable .selectable-sentence {
   font-size: 24rem;
   letter-spacing: .04em;
   line-height: 1.78;
   width: 71.33%;
-  margin: auto
+  margin: auto;
 }
 .index-selectable .selectable-sentence p+p {
-  margin-top: 1em
+  margin-top: 1em;
 }
 .index-readings {
   padding-top: 190rem;
-  padding-bottom: 30rem
+  padding-bottom: 30rem;
 }
 .index-readings .section-head {
-  margin-bottom: 130rem
+  margin-bottom: 130rem;
 }
 .reading-items {
   width: 670rem;
-  margin: auto
+  margin: auto;
 }
 .reading-item+.reading-item {
-  margin-top: 80rem
+  margin-top: 80rem;
 }
 .reading-item .item-thumbnail {
   width: 100%;
-  margin-bottom: 20rem
+  margin-bottom: 20rem;
 }
 .reading-item .item-thumbnail img {
   width: 386px;
@@ -594,7 +595,7 @@ object-fit: cover;
 }
 .reading-item .item-caption {
   display: flex;
-  align-items: flex-start
+  align-items: flex-start;
 }
 .reading-item .item-caption>* {
   font-size: 28rem;
@@ -611,36 +612,36 @@ object-fit: cover;
   letter-spacing: .1em
 }
 .reading-item .item-category a {
-  color: #6e6e6e
+  color: #6e6e6e;
 }
 .reading-item .caption-number {
-  margin-right: .5em
+  margin-right: .5em;
 }
 .index-news {
   padding-top: 150rem;
-  padding-bottom: 165rem
+  padding-bottom: 165rem;
 }
 .index-news .section-head {
-  margin-bottom: 125rem
+  margin-bottom: 125rem;
 }
 .news-items {
   list-style-type: none;
   width: 670rem;
-  margin: auto
+  margin: auto;
 }
 .news-items .news-item+.news-item {
-  margin-top: 36rem
+  margin-top: 36rem;
 }
 .news-items .item-subject {
   display: block;
   font-size: 26rem;
   letter-spacing: .1em;
   line-height: 1.92;
-  margin-bottom: 3rem
+  margin-bottom: 3rem;
 }
 .news-items .item-date {
   color: #6e6e6e;
   display: block;
   font-size: 16rem;
-  letter-spacing: .1em
+  letter-spacing: .1em;
 }
