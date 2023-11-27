@@ -33,7 +33,7 @@ p {
   margin-top: 0;
   margin-bottom: 1rem
 }
-abbr[data-original-title], abbr[title] {
+abbr[data-original-title], abbr[c-title] {
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
@@ -3751,7 +3751,7 @@ a.close.disabled {
 .toast-body {
   padding: .75rem
 }
-.modal-open {
+/* .modal-open {
   overflow: hidden
 }
 .modal-open .modal {
@@ -3951,7 +3951,7 @@ a.close.disabled {
   .modal-xl {
     max-width: 1140px
   }
-}
+} */
 .tooltip {
   position: absolute;
   z-index: 1070;
@@ -7237,8 +7237,8 @@ a.text-dark:focus, a.text-dark:hover {
   a:not(.btn) {
     text-decoration: underline
   }
-  abbr[title]::after {
-    content: " (" attr(title) ")"
+  abbr[c-title]::after {
+    content: " (" attr(p-title) ")"
   }
   pre {
     white-space: pre-wrap!important
