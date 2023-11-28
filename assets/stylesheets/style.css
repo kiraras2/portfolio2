@@ -5,6 +5,9 @@ body {
 body main {
   min-height: 100vh
 }
+li {
+	list-style-type:none;
+}
 .is-bold {
   font-family: "punctuation-bold", aktiv-grotesk, "A+tanp- StdN W6", "Koburina Gothic Std W6", " Std W6", "A+tanp- StdN W1", "Koburina Gothic Std W1", sans-serif !important;
 }
@@ -36,59 +39,6 @@ img {
   animation-duration: .3s;
   animation-fill-mode: forwards
 }
-#p-shopify-section-hero-1, #p-shopify-section-image-bar {
-  display: none
-}
-#p-shopify-section-header {
-  display: none
-}
-.cart-popup-l-wrapper {
-  width: 100%;
-  max-width: 300px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 100px
-}
-.cart-popup {
-  padding: 12px;
-  padding-top: 0;
-  box-shadow: none !important
-}
-.cart-popup__heading {
-  height: 35px;
-  line-height: 0;
-  display: flex;
-  align-items: center
-}
-.cart-popup__close {
-  position: absolute;
-  right: 8px;
-  top: 5px
-}
-.cart-popup__close .icon-close {
-  width: 15px;
-  height: 100%
-}
-.cart-popup-item {
-  margin: 16px 0
-}
-.cart-popup-item__quantity {
-  line-height: 1
-}
-.cart-popup-item__description {
-  display: block;
-  padding: 8px
-}
-.cart-popup-item__quantity {
-  text-align: left !important
-}
-.cart-popup-item__title {
-  margin-bottom: 4px
-}
-.cart-popup__cta-link {
-  margin-bottom: 8px
-}
 .animate-fade-in-down {
   opacity: 0
 }
@@ -109,22 +59,6 @@ img {
   .p-tmp-menu {
     right: 0
   }
-}
-.formError {
-  position: relative !important;
-  top: auto !important;
-  left: auto !important;
-  margin-top: auto !important;
-  margin-bottom: 25rem !important
-}
-.formError .formErrorContent {
-  color: #721c24 !important;
-  background-color: #f8d7da !important;
-  border-color: #f5c6cb !important;
-  box-shadow: none !important
-}
-.formError .formErrorArrow {
-  display: none !important
 }
 .p-button-spmenu {
   display: block;
@@ -802,6 +736,8 @@ html body .l-wrapper {
 }
 html body .l-wrapper header {
   height: 120rem;
+  /* padding-left: 40rem;
+  padding-right: 32rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1437,7 +1373,6 @@ html body .l-wrapper main .wrap-content-gray+.link-to-radio {
 }
 html body .l-wrapper footer {
   border-top: solid 1px #b4b4b4;
-  /* padding: 40rem 0 246rem 0; */
 }
 html body .l-wrapper footer .copyright {
   font-size: 12rem;
@@ -1623,9 +1558,7 @@ a.btn-qanda:hover {
 }
 .l-themes-header .l-wrap-themes-icon-right {
   display: flex;
-  align-items: center;
   margin-right: 92rem;
-  transition: .3s;
 }
 .l-themes-header .l-wrap-themes-icon-right .themes-mypage-icon {
   height: 40rem;
@@ -1683,13 +1616,10 @@ body.menu-opened .l-themes-header .l-wrap-themes-icon-right .themes-nav-icon spa
   transform-origin: left 50%;
   width: 45rem;
 }
-.p-logo-original {
-  display: inline-block;
-}
 .p-logo-original p {
-font-size: 14px;
+font-size: 12px;
 font-weight: bold;
-margin-left: 10px;
+margin-left: 30px;
 }
 .p-tmp-menu {
   display: block;
@@ -1724,10 +1654,10 @@ margin-left: 10px;
   writing-mode: vertical-rl;
   position: absolute;
   left: 0;
-  padding: 0 0 0 30rem;
   font-size: 25rem;
   font-weight: 200;
   letter-spacing: .27em;
+  right: 93rem
 }
 footer .l-wrap-footer .c-top-title {
   position: absolute;
@@ -1782,9 +1712,6 @@ footer .l-wrap-footer .c-top-title {
   margin-left: 24rem;
   font-weight: 300;
 }
-/* .l-wrap-themes-nav li a img {
-  height: 85rem;
-} */
 .l-wrap-footer-area {
   padding: 0;
   background-color: #fff5f5;
@@ -1797,7 +1724,7 @@ footer .l-wrap-footer .c-top-title {
   list-style: none;
   padding: 0 8rem 0rem 0;
 }
-.l-wrap-footer-area .l-wrap-footer li a {
+.l-wrap-footer-area .l-wrap-themes-nav li a {
   display: block;
   font-size: 34rem !important;
   line-height: 1;
@@ -1806,18 +1733,19 @@ footer .l-wrap-footer .c-top-title {
   color: #000;
   letter-spacing: 1.8rem;
 }
-.l-wrap-footer-area .l-wrap-footer li a span {
+.l-wrap-footer-area .l-wrap-themes-nav li a span {
   font-family: "punctuation-bold", aktiv-grotesk, "A+tanp-こぶりなゴシック StdN W6", "Koburina Gothic Std W6", "こぶりなゴシック Std W6", "メイリオ", sans-serif;
   font-feature-settings: "palt" 1;
   -webkit-font-feature-settings: "palt" 1;
   font-style: normal;
   font-weight: bold;
 }
-.l-wrap-footer-area .l-wrap-footer li a span.p-text-nav-small {
+.l-wrap-footer-area .l-wrap-themes-nav li a span.p-text-nav-small {
   font-size: 19rem;
   font-weight: bold;
+  margin-left: 10px;
 }
-.l-wrap-footer-area .l-wrap-footer li a img {
+.l-wrap-footer-area .l-wrap-themes-nav li a img {
   height: 85rem;
 }
 .footer-link-top {
@@ -1989,7 +1917,7 @@ footer .l-wrap-sns a img {
   background-color: var(--color-btn-primary) !important;
   opacity: .6 !important;
 }
-li.title {
+li.c-title {
   margin-top: 90rem;
   font-size: 16rem;
   font-family: "punctuation-bold", aktiv-grotesk, "A+tanp-こぶりなゴシック StdN W6", "Koburina Gothic Std W6", "こぶりなゴシック Std W6", "メイリオ", sans-serif;
@@ -2025,6 +1953,43 @@ li.title {
   text-decoration: none;
   width: 100% !important
 }
+footer .l-wrap-themes-nav .c-top-title {
+  position: absolute;
+  left: auto;
+  right: 30rem
+}
+.l-wrap-themes-nav {
+  list-style: none;
+  padding: 188rem 8rem 0rem 172rem
+}
+.l-wrap-themes-nav li a {
+  display: block;
+  font-size: 34rem !important;
+  line-height: 1;
+  margin-bottom: 34rem;
+  font-weight: 500;
+  letter-spacing: 1.8rem;
+}
+.l-wrap-themes-nav li a span {
+  font-family: "punctuation-bold", aktiv-grotesk, "A+tanp-こぶりなゴシック StdN W6", "Koburina Gothic Std W6", "こぶりなゴシック Std W6", "メイリオ", sans-serif;
+  font-feature-settings: "palt" 1;
+  -webkit-font-feature-settings: "palt" 1;
+  font-style: normal;
+  font-weight: bold;
+}
+.l-wrap-themes-nav li a span.p-text-nav-small {
+  font-size: 16rem;
+  margin-left: 24rem;
+  font-weight: bold;
+}
+.l-wrap-footer-area {
+  padding: 0;
+  background-color: #fff5f5;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 80rem 48rem 0 48rem;
+  position: relative;
+}
 @media(min-width: 465px) {
 html.iphone, html.ipad {
   font-size: .6133333333px
@@ -2052,14 +2017,4 @@ html body .l-wrapper footer .copyright {
 html body .p-aside-logo, html body .p-aside-qrcode {
   display: flex
 }
-html body #modal_qrcode {
-  display: none
 }
-html body .modal-backdrop {
-  display: none
-}
-html body body.modal-open {
-  overflow: auto
-}
-}
-

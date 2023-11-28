@@ -546,7 +546,6 @@ object-fit: cover;
 }
 .p-index-selectable .p-selectable-visual.js-scroll-trigger.is-active .p-visual-catch {
   width: 100%;
-  height: 413px;
   object-fit: cover;
 }
 .p-index-selectable .p-selectable-title {
