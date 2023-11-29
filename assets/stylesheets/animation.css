@@ -543,6 +543,7 @@ article.index.is-first .p-about-concept-catch .p-catch-item:nth-child(2).is-acti
 .p-index-selectable .p-selectable-visual.js-scroll-trigger.is-active .p-visual-image img {
 width: 100%;
 object-fit: cover;
+height: 377px;
 }
 .p-index-selectable .p-selectable-visual.js-scroll-trigger.is-active .p-visual-catch {
   width: 100%;
@@ -597,7 +598,7 @@ object-fit: cover;
   align-items: flex-start;
 }
 .p-reading-item .p-item-caption>* {
-  font-size: 28rem;
+  font-size: 26rem;
   font-weight: 300;
   line-height: 1.64;
   letter-spacing: .1em

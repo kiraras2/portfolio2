@@ -736,8 +736,6 @@ html body .l-wrapper {
 }
 html body .l-wrapper header {
   height: 120rem;
-  /* padding-left: 40rem;
-  padding-right: 32rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
